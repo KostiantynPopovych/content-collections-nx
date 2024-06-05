@@ -7,10 +7,15 @@
   "// targets": "to see all targets run: nx show project blog --web",
   "targets": {
     "build:mdx": {
+      "executor": "@nx/rollup:rollup",
       "options": {
-        "cwd": "packages/blog"
+        "main": "packages/blog/src/mdx/index.ts",
+        "format": ["cjs"],
+        "compiler": "tsc",
+        "tsConfig": "packages/blog/tsconfig.lib.json",
+        "generateExportsField": true,
+        "outputPath": "packages/blog/dist/mdx"
       },
-      "command": "tsup ./src/mdx/index.ts --format cjs --dts --out-dir ./dist/mdx",
       "cache": true
     }
   }

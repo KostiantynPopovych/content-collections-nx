@@ -6,7 +6,6 @@ export type TOC = {
 	title: string;
 	url: string;
 	depth: number;
-	something?: boolean
 };
 
 const slugger = new Slugger();

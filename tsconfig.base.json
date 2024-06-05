@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "#repo/blog/mdx-compiled": ["packages/blog/dist/mdx/index.cjs.js"]
+      "#repo/blog/mdx": ["packages/blog/src/mdx/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,6 +1,6 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
 import { compileMDX } from '@content-collections/mdx';
-import { remarkHeading } from "#repo/blog/mdx-compiled";
+import { remarkHeading } from "#repo/blog/mdx";
 
 const posts = defineCollection({
 	name: "posts",

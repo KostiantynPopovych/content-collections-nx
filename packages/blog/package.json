@@ -1,0 +1,12 @@
+{
+  "name": "@repo/blog",
+  "exports": {
+    "./mdx": "./dist/mdx/index.js"
+  },
+  "devDependencies": {
+    "github-slugger": "^2.0.0",
+    "tsup": "^8.1.0",
+    "unified": "^11.0.4",
+    "unist-util-visit": "^5.0.0"
+  }
+}

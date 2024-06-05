@@ -1,0 +1,17 @@
+{
+  "name": "blog",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/blog/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project blog --web",
+  "targets": {
+    "build:mdx": {
+      "options": {
+        "cwd": "packages/blog"
+      },
+      "command": "tsup ./src/mdx/index.ts --format cjs --dts --out-dir ./dist/mdx",
+      "cache": true
+    }
+  }
+}
